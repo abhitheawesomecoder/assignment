@@ -146,7 +146,7 @@ export default {
                this.serverErrorMessage = ''
             },3000)
          }else if(response.data.code == 0)
-         this.$router.replace({ name: "Dashboard", params:{ username: this.form.email} });
+         this.$router.replace({ name: "ProductListing", params:{ username: this.form.email} });
       })
       .catch(error => {
          console.log(error)
